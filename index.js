@@ -58,7 +58,7 @@ const createEventEmitter = (
   const on = (...regExps) =>
     aliveAlwaysSource.filter(({ type }) => regExps.some(reg => type.match(reg)))
 
-  const once = regExp => on(regExp).take(1)
+  const once = (...args) => on(...args).take(1)
 
   const emit = action => {
     if (!action.type || typeof action.type !== 'string') {
