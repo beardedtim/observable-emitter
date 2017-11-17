@@ -1,11 +1,29 @@
 {
   "name": "observable-emitter",
   "version": "0.0.0-development",
-  "description": "An Event-Emitter clone using Observables",
+  "description": "An Event-Emitter like API using Observables",
   "main": "index.js",
   "author": "Tim Roberts <timiroberts@gmail.com>",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "rxjs",
+    "reactive-programming",
+    "event-emitter",
+    "observables",
+    "observable-emitter",
+    "events-as-observables"
+  ],
+  "dependencies": {
+    "rxjs": "^5.5.2"
+  },
+  "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
+    "nodemon": "^1.12.1",
+    "semantic-release": "^8.2.0",
+    "standard-prettier": "^1.0.1"
+  },
   "scripts": {
     "commit": "git-cz",
     "test": "echo \"TODO: IMPLIMENT \"; exit 0;",
@@ -17,19 +35,9 @@
     "type": "git",
     "url": "https://github.com/beardedtim/observable-emitter.git"
   },
-  "devDependencies": {
-    "commitizen": "^2.9.6",
-    "cz-conventional-changelog": "^2.1.0",
-    "nodemon": "^1.12.1",
-    "semantic-release": "^8.2.0",
-    "standard-prettier": "^1.0.1"
-  },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
-  },
-  "dependencies": {
-    "rxjs": "^5.5.2"
   }
 }
