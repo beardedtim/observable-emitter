@@ -10,7 +10,7 @@
     "commit": "git-cz",
     "test": "echo \"TODO: IMPLIMENT \"; exit 0;",
     "lint": "echo \"TODO: IMPLIMENT \"; exit 0;",
-    "prettier": "standard-prettier \"modules/**/*.js\"",
+    "prettier": "standard-prettier \"index.js\"",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
